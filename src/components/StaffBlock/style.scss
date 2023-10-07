@@ -1,0 +1,103 @@
+.staff-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	height: calc(100vh - 390px);
+	overflow-y: auto;
+
+	&__box {
+		display: flex;
+		align-items: center;
+		gap: 1.6em;
+		font-size: 14px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		background: $light-blue;
+		padding: 1.2em;
+	}
+
+	[data-name='middle'] {
+		p {
+			position: relative;
+
+			&:last-child::before {
+				content: none;
+			}
+		}
+
+		p::before {
+			content: '';
+			position: absolute;
+			right: -1em;
+			top: 50%;
+			transform: translateY(-50%);
+			height: 20px;
+			width: 1px;
+			background: $gray;
+			opacity: 0.5;
+		}
+	}
+
+
+	[data-name='fullname'] {
+		font-size: 18px;
+		font-weight: 600;
+		color: $blue;
+	}
+
+	[data-name='inn'] {
+		background: $white;
+		color: $gray;
+		padding: 0.2em 0.6em;
+		border-radius: 0.4em;
+		white-space: nowrap;
+	}
+
+	[data-name='type'] {
+		color: $white;
+		font-weight: 600;
+		background: $green;
+		padding: 0.2em 0.4em;
+		border-radius: 0.4em;
+	}
+
+	[data-name='country'] {
+		display: flex;
+		align-items: center;
+		white-space: nowrap;
+		gap: 0.5em;
+
+		img {
+			width: 1.8em;
+		}
+	}
+
+	[data-name="status"] {
+		color: $white;
+		background: $gray;
+		padding: 0.3em 0.6em;
+		border-radius: 0.4em;
+		user-select: none;
+
+
+		&[data-status='problem'] {
+			background: $yellow;
+		}
+
+		&[data-status='critical'] {
+			background: $red;
+		}
+
+		&[data-status='remark'] {
+			background: $sky;
+		}
+
+		&[data-status='done'] {
+			background: $green;
+		}
+	}
+}

@@ -1,0 +1,103 @@
+{
+	"staff": [
+		{
+			"country": "uz",
+			"position": "mountaineer",
+			"gender": "female",
+			"type": "ТД",
+			"fullname": "Мельникова Ксения Витальевна",
+			"inn": "1234567890",
+			"address": "г. Ташкент",
+			"birthday": 970839974000,
+			"status": "problem"
+		},
+		{
+			"country": "ru",
+			"position": "mountaineer",
+			"gender": "female",
+			"type": "Кандидат",
+			"fullname": "Фурсова Елизавета Владимировна",
+			"inn": "12234567890",
+			"address": "г. Санкт-Петербург",
+			"birthday": 212597174000,
+			"status": "critical"
+		},
+		{
+			"country": "tj",
+			"position": "mountaineer",
+			"gender": "male",
+			"type": "СМЗ",
+			"fullname": "Богословский Артем Михайлович",
+			"inn": "12344567890",
+			"address": "г. Душанбе",
+			"birthday": 970839974000,
+			"status": "remark"
+		},
+		{
+			"country": "tj",
+			"position": "Baker",
+			"gender": "male",
+			"type": "ГПХ",
+			"fullname": "Пименов Максим Евгеньевич",
+			"inn": "4574567890",
+			"address": "г. Душанбе",
+			"birthday": 836315174000,
+			"status": "done"
+		},
+		{
+			"country": "ru",
+			"position": "mountaineer",
+			"gender": "male",
+			"type": "СМЗ",
+			"fullname": "Аксенов Егор Тимофеевич",
+			"inn": "9123567830",
+			"address": "г. Санкт-Петербург",
+			"birthday": 836315174000,
+			"status": "problem"
+		},
+		{
+			"country": "uz",
+			"position": "Turner",
+			"gender": "male",
+			"type": "ГПХ",
+			"fullname": "Беляев Артемий Глебович",
+			"inn": "3414562890",
+			"address": "г. Ташкент",
+			"birthday": 762878774000,
+			"status": "remark"
+		},
+		{
+			"country": "tj",
+			"position": "mountaineer",
+			"gender": "female",
+			"type": "ТД",
+			"fullname": "Быкова Ева Ивановна",
+			"inn": "2411223485",
+			"address": "г. Душанбе",
+			"birthday": 660235574000,
+			"status": "critical"
+		},
+		{
+			"country": "ru",
+			"position": "Baker",
+			"gender": "male",
+			"type": "СМЗ",
+			"fullname": "Егорова Екатерина Ильинична",
+			"inn": "6774523923",
+			"address": "г. Москва",
+			"birthday": 140021174000,
+			"status": "remark"
+		},
+		{
+			"country": "uz",
+			"position": "Turner",
+			"gender": "male",
+			"type": "Кандидат",
+			"fullname": "Логинов Кирилл Мирославович",
+			"inn": "7903234761",
+			"address": "г. Ташкент",
+			"birthday": 460647974000,
+			"status": "done"
+		}
+	]
+}

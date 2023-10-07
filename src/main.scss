@@ -1,0 +1,116 @@
+.staff {
+	background: $white;
+	box-shadow: 0.1em 0.1em 1em rgba($color: #000000, $alpha: 0.05);
+	grid-column: 1/3;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	._head {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5em;
+
+		label {
+			position: relative;
+		}
+
+		input {
+			width: 100%;
+		}
+
+		img {
+			position: absolute;
+			right: 1em;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		p {
+			font-size: 13px;
+			color: $gray;
+		}
+	}
+
+
+
+	._content {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5em;
+	}
+}
+
+
+.pagination {
+	display: flex;
+	align-items: center;
+	gap: 0.8em;
+
+
+	&__item {
+		position: relative;
+		text-align: center;
+		font-size: 14px;
+		border: 1px solid currentColor;
+		padding: 0.4em 1em;
+		border-radius: 10em;
+		user-select: none;
+		white-space: nowrap;
+		cursor: pointer;
+		overflow: hidden;
+		transition: 0.2s;
+		box-sizing: border-box;
+
+
+		&[data-name='all'] {
+			color: $gray;
+		}
+
+		&[data-name='problem'] {
+			color: $yellow;
+		}
+
+		&[data-name='critical'] {
+			color: $red;
+		}
+
+		&[data-name='remark'] {
+			color: $sky;
+		}
+
+		&[data-name='done'] {
+			color: $green;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: currentColor;
+			transition: inherit;
+			opacity: 0.1;
+		}
+
+		p {
+			position: relative;
+			z-index: 2;
+			color: inherit;
+		}
+
+		&[data-active='true'] {
+			&::before {
+				opacity: 1;
+			}
+
+			border-color: transparent;
+
+			p {
+				color: $white;
+			}
+		}
+	}
+}
